@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>form</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>My Form</legend>
+				<p>
+					<label>FirstName</label>
+					<input type="text" name="firstName" id="firstname">
+				</p>
+				<p>
+					<label>Name</label>&ensp;&ensp;&ensp;&nbsp;
+					<input type="text" name="name" id="name">
+				</p>
+				<p>
+					<label>Age</label>&ensp;&ensp;&ensp;&ensp;&ensp;
+					<input type="number" name="age" id="age">
+				</p>
+				<p>
+					<label>Phone</label>&ensp;&ensp;&ensp;
+					<input type="tel" name="phone" id="phone">
+				</p>
+				<p>
+					<label>Email</label>&ensp;&ensp;&ensp;&nbsp;
+					<input type="email" name="email" id="email">
+				</p>
+				<p>
+					<label>Student at 42?</label>
+					<input type="checkbox" name="student" id="student">
+				</p>
+					<label>Gender</label>
+				<p>
+					<input type="radio" name="gender" id="gender_male" value="male">
+					<label>male</label>
+					<input type="radio" name="gender" id="gender_female" value="female">
+					<label>female</label>
+					<input type="radio" name="gender" id="gender_other" value="other">
+					<label>other</label>
+				</p>
+					<input type="submit" name="submit" onclick="return displayFormContents();">
+			</fieldset>
+		</form>
+		<script type="text/javascript" src="popup.js"></script>
+	</body>
+</html>
