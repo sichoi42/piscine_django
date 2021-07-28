@@ -20,7 +20,7 @@ def make_html():
 	write_top(file2)
 	file2.write("<body>\n")
 	file2.write("<h1 style=\"text-align: center;\">periodic_table</h1>\n")
-	file = open("periodic_table.txt", "r")
+	file = open("../../d01/ex07/periodic_table.txt", "r")
 	for i in range(1, 89):
 		tmp = treat_input(file)
 		j = int(tmp[1]['number'])
@@ -91,7 +91,7 @@ def make_table(file2, lst, number):
 	s = "<li>" + str(number) + "</li>\n"
 	file2.write(s)
 	name = lst[4]
-	s = "<li>" + name + "</li>\n"
+	s = "<h4><li>" + name + "</li></h4>\n"
 	file2.write(s)
 	molar = lst[3]['molar']
 	s = "<li>" + str(molar) + "</li>\n"
@@ -108,7 +108,7 @@ def make_La(file2):
 	file2.write("<h2>La</h2>\n")
 	file2.write("<ul>\n")
 	file2.write("<li>57~71</li>\n")
-	file2.write("<li>lanthanoids</li>\n")
+	file2.write("<h4><li>lanthanoids</li></h4>\n")
 	file2.write("<li>.</li>\n")
 	file2.write("</ul>\n")
 	file2.write("</td>\n")
@@ -122,7 +122,7 @@ def make_Ac(file2):
 	file2.write("<h2>Ac</h2>\n")
 	file2.write("<ul>\n")
 	file2.write("<li>89~103</li>\n")
-	file2.write("<li>actinoids</li>\n")
+	file2.write("<h4><li>actinoids</li></h4>\n")
 	file2.write("<li>.</li>\n")
 	file2.write("</ul>\n")
 	file2.write("</td>\n")
@@ -151,7 +151,7 @@ def write_style(file2):
 def make_period(file2):
 	for i in range(1, 8):
 		s1 = '.period_' + str(i) + '\n'
-		s2 = '\ttop: ' + str(150 * i - 80) + 'px;\n'
+		s2 = '\ttop: ' + str(200 * i - 130) + 'px;\n'
 		file2.write(s1)
 		file2.write("{\n")
 		file2.write("\tposition: absolute;\n")
