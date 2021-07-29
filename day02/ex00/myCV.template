@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{title}</title>
+		<style>
+			table
+			{
+				width: 50%;
+				border: 3px solid #424242;
+			}
+			th
+			{
+				padding: 20px;
+				border: 1px solid #424242;
+			}
+			td
+			{
+				padding: 20px;
+				border: 1px solid #424242;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Who am I</h1>
+		<table style="border-collapse: collapse;">
+		<tr>
+			<th>City</th>
+			<th>Name</th>
+			<th>Surname</th>
+			<th>age</th>
+			<th>job</th>
+		</tr>
+		<tr>
+			<td>{city}</td>
+			<td>{name}</td>
+			<td style="border: 1px solid #424242;">{surname}</td>
+			<td>{age}</td>
+			<th>{job}</th>
+		</tr>
+		</table>
+	</body>
+</html>
