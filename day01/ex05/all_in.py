@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import sys
 
 def trict_input(word):

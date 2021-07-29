@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def print_dict():
 	d = [
 		('Hendrix' , '1942'),

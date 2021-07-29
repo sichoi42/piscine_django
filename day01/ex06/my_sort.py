@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def sort_dict():
 	d = {
 		'Hendrix' : '1942',

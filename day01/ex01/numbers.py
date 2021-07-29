@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def file_open():
 	file = open("numbers.txt", "r")
 	line = file.read().replace(',', '\n')

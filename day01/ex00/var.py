@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def my_var():
 	v1 = 42
 	v2 = '42'
