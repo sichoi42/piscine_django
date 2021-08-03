@@ -1,0 +1,695 @@
+<head>
+	<title>Ex00: Markdown Cheatsheet.</title>
+<style>
+	table
+	{
+		width: 50%;
+		border: 2px solid black;
+		border-collapse: collapse;
+	}
+	th
+	{
+		padding: 20px;
+		border: 1px solid black;
+	}
+	td
+	{
+		padding: 20px;
+		border: 1px solid black;
+	}
+	blockquote
+	{
+		border-left: 10px solid #ccc;
+		margin: 10px;
+		padding: 10px;
+	}
+</style>
+</head>
+<body>
+<h1 style="text-align: center;">Markdown Cheatsheet</h1>
+<blockquote>
+	<a href="https://www.markdownguide.org/cheat-sheet/">Reference</a>
+</blockquote>
+<h1>Headings</h1>
+<table class="table table-bordered">
+	<thead class="thead-light">
+	  <tr>
+		<th>Markdown</th>
+		<th>HTML</th>
+		<th>Rendered Output</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td><code class="highlighter-rouge"># Heading level 1</code></td>
+		<td><code class="highlighter-rouge">&lt;h1&gt;Heading level 1&lt;/h1&gt;</code></td>
+		<td><h1 class="no-anchor" data-toc-skip="" id="heading-level-1">Heading level 1</h1></td>
+	  </tr>
+	  <tr>
+		<td><code class="highlighter-rouge">## Heading level 2</code></td>
+		<td><code class="highlighter-rouge">&lt;h2&gt;Heading level 2&lt;/h2&gt;</code></td>
+		<td><h2 class="no-anchor" data-toc-skip="" id="heading-level-2">Heading level 2</h2></td>
+	  </tr>
+	  <tr>
+		<td><code class="highlighter-rouge">### Heading level 3</code></td>
+		<td><code class="highlighter-rouge">&lt;h3&gt;Heading level 3&lt;/h3&gt;</code></td>
+		<td><h3 class="no-anchor" data-toc-skip="" id="heading-level-3">Heading level 3</h3></td>
+	  </tr>
+	  <tr>
+		<td><code class="highlighter-rouge">#### Heading level 4</code></td>
+		<td><code class="highlighter-rouge">&lt;h4&gt;Heading level  4&lt;/h4&gt;</code></td>
+		<td><h4 class="no-anchor" id="heading-level-4">Heading level 4</h4></td>
+	  </tr>
+	  <tr>
+		<td><code class="highlighter-rouge">##### Heading level 5</code></td>
+		<td><code class="highlighter-rouge">&lt;h5&gt;Heading level 5&lt;/h5&gt;</code></td>
+		<td><h5 class="no-anchor" id="heading-level-5">Heading level 5</h5></td>
+	  </tr>
+	  <tr>
+		<td><code class="highlighter-rouge">###### Heading level 6</code></td>
+		<td><code class="highlighter-rouge">&lt;h6&gt;Heading level 6&lt;/h6&gt;</code></td>
+		<td><h6 class="no-anchor">Heading level 6</h6></td>
+	  </tr>
+	</tbody>
+  </table>
+
+  <h1>Alternate Syntax</h1>
+  <table class="table table-bordered">
+	<thead class="thead-light">
+	  <tr>
+		<th>Markdown</th>
+		<th>HTML</th>
+		<th>Rendered Output</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td><code class="highlighter-rouge">Heading level 1<br>===============</code></td>
+		<td><code class="highlighter-rouge">&lt;h1&gt;Heading level 1&lt;/h1&gt;</code></td>
+		<td><h1 class="no-anchor" data-toc-skip="" id="heading-level-1-1">Heading level 1</h1></td>
+	  </tr>
+	  <tr>
+		<td><code class="highlighter-rouge">Heading level 2<br>---------------</code></td>
+		<td><code class="highlighter-rouge">&lt;h2&gt;Heading level 2&lt;/h2&gt;</code></td>
+		<td><h2 class="no-anchor" data-toc-skip="" id="heading-level-2-1">Heading level 2</h2></td>
+	  </tr>
+	</tbody>
+  </table>
+
+  <h1>Paragraphs</h1>
+  <table class="table table-bordered">
+	<thead class="thead-light">
+	  <tr>
+		<th>Markdown</th>
+		<th>HTML</th>
+		<th>Rendered Output</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td>
+		  <code class="highlighter-rouge">
+			I really like using Markdown.<br><br>
+
+			I think I'll use it to format all of my documents from now on.
+		  </code>
+		</td>
+		<td>
+		  <code class="highlighter-rouge">&lt;p&gt;I really like using Markdown.&lt;/p&gt;<br><br>
+
+		  &lt;p&gt;I think I'll use it to format all of my documents from now on.&lt;/p&gt;</code>
+		</td>
+		<td>
+		  <p>I really like using Markdown.</p>
+
+		  <p>I think I'll use it to format all of my documents from now on.</p>
+		</td>
+	  </tr>
+	</tbody>
+  </table>
+
+  <h1>Line Breaks</h1>
+  <table class="table table-bordered">
+	<thead class="thead-light">
+	  <tr>
+		<th>Markdown</th>
+		<th>HTML</th>
+		<th>Rendered Output</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td>
+		  <code class="highlighter-rouge">
+			This is the first line. &nbsp;<br>
+			And this is the second line.
+		  </code>
+		</td>
+		<td>
+		  <code class="highlighter-rouge">&lt;p&gt;This is the first line.&lt;br&gt;<br>
+
+		  And this is the second line.&lt;/p&gt;</code>
+		</td>
+		<td>
+		  <p>This is the first line.<br>
+		  And this is the second line.</p>
+		</td>
+	  </tr>
+	</tbody>
+  </table>
+
+  <h1>Bold</h1>
+  <table class="table table-bordered">
+	<thead class="thead-light">
+	  <tr>
+		<th>Markdown</th>
+		<th>HTML</th>
+		<th>Rendered Output</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td><code class="highlighter-rouge">I just love **bold text**.</code></td>
+		<td><code class="highlighter-rouge">I just love &lt;strong&gt;bold text&lt;/strong&gt;.</code></td>
+		<td>I just love <strong>bold text</strong>.</td>
+	  </tr>
+	  <tr>
+		<td><code class="highlighter-rouge">I just love __bold text__.</code></td>
+		<td><code class="highlighter-rouge">I just love &lt;strong&gt;bold text&lt;/strong&gt;.</code></td>
+		<td>I just love <strong>bold text</strong>.</td>
+	  </tr>
+	  <tr>
+		<td><code class="highlighter-rouge">Love**is**bold</code></td> <td><code class="highlighter-rouge">Love&lt;strong&gt;is&lt;/strong&gt;bold</code></td>
+		<td>Love<strong>is</strong>bold</td>
+	  </tr>
+	</tbody>
+  </table>
+
+  <h1>Italic</h1>
+  <table class="table table-bordered">
+	<thead class="thead-light">
+	  <tr>
+		<th>Markdown</th>
+		<th>HTML</th>
+		<th>Rendered Output</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td><code class="highlighter-rouge">I just love **bold text**.</code></td>
+		<td><code class="highlighter-rouge">I just love &lt;strong&gt;bold text&lt;/strong&gt;.</code></td>
+		<td>I just love <strong>bold text</strong>.</td>
+	  </tr>
+	  <tr>
+		<td><code class="highlighter-rouge">I just love __bold text__.</code></td>
+		<td><code class="highlighter-rouge">I just love &lt;strong&gt;bold text&lt;/strong&gt;.</code></td>
+		<td>I just love <strong>bold text</strong>.</td>
+	  </tr>
+	  <tr>
+		<td><code class="highlighter-rouge">Love**is**bold</code></td> <td><code class="highlighter-rouge">Love&lt;strong&gt;is&lt;/strong&gt;bold</code></td>
+		<td>Love<strong>is</strong>bold</td>
+	  </tr>
+	</tbody>
+  </table>
+
+  <h1>List</h1><br>
+  <h1>Ordered Lists</h1>
+  <table class="table table-bordered">
+	<thead class="thead-light">
+	  <tr>
+		<th>Markdown</th>
+		<th>HTML</th>
+		<th>Rendered Output</th>
+	  </tr>
+	</thead>
+	<tbody>
+	<tr>
+	  <td>
+		<code class="highlighter-rouge">
+		  1. First item<br>
+		  2. Second item<br>
+		  3. Third item<br>
+		  4. Fourth item
+		</code>
+	  </td>
+	  <td>
+		<code class="highlighter-rouge">
+		  &lt;ol&gt;<br>
+			&lt;li&gt;First item&lt;/li&gt;<br>
+			&lt;li&gt;Second item&lt;/li&gt;<br>
+			&lt;li&gt;Third item&lt;/li&gt;<br>
+			&lt;li&gt;Fourth item&lt;/li&gt;<br>
+		  &lt;/ol&gt;
+		</code>
+	  </td>
+	  <td>
+		<ol>
+		  <li>First item</li>
+		  <li>Second item</li>
+		  <li>Third item</li>
+		  <li>Fourth item</li>
+		</ol>
+	  </td>
+	  </tr>
+	  <tr>
+		<td>
+		  <code class="highlighter-rouge">
+			1. First item<br>
+			1. Second item<br>
+			1. Third item<br>
+			1. Fourth item
+		  </code>
+		</td>
+		<td>
+		  <code class="highlighter-rouge">
+			&lt;ol&gt;<br>
+			  &lt;li&gt;First item&lt;/li&gt;<br>
+			  &lt;li&gt;Second item&lt;/li&gt;<br>
+			  &lt;li&gt;Third item&lt;/li&gt;<br>
+			  &lt;li&gt;Fourth item&lt;/li&gt;<br>
+			&lt;/ol&gt;
+		  </code>
+		</td>
+		<td>
+		  <ol>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+			<li>Fourth item</li>
+		  </ol>
+		</td>
+	  </tr>
+	  <tr>
+		<td>
+		  <code class="highlighter-rouge">
+			1. First item<br>
+			8. Second item<br>
+			3. Third item<br>
+			5. Fourth item
+		  </code>
+		</td>
+		<td>
+		  <code class="highlighter-rouge">
+			&lt;ol&gt;<br>
+			  &lt;li&gt;First item&lt;/li&gt;<br>
+			  &lt;li&gt;Second item&lt;/li&gt;<br>
+			  &lt;li&gt;Third item&lt;/li&gt;<br>
+			  &lt;li&gt;Fourth item&lt;/li&gt;<br>
+			&lt;/ol&gt;
+		  </code>
+		</td>
+		<td>
+		  <ol>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+			<li>Fourth item</li>
+		  </ol>
+		</td>
+	  </tr>
+	  <tr>
+		<td>
+		  <code class="highlighter-rouge">
+			1. First item<br>
+			2. Second item<br>
+			3. Third item<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;1. Indented item<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;2. Indented item<br>
+			4. Fourth item
+		  </code>
+		</td>
+		<td>
+		  <code class="highlighter-rouge">
+			&lt;ol&gt;<br>
+			  &lt;li&gt;First item&lt;/li&gt;<br>
+			  &lt;li&gt;Second item&lt;/li&gt;<br>
+			  &lt;li&gt;Third item<br>
+				&lt;ol&gt;<br>
+				  &lt;li&gt;Indented item&lt;/li&gt;<br>
+				  &lt;li&gt;Indented item&lt;/li&gt;<br>
+				&lt;/ol&gt;<br>
+			  &lt;/li&gt;<br>
+			  &lt;li&gt;Fourth item&lt;/li&gt;<br>
+			&lt;/ol&gt;
+		  </code>
+		</td>
+		<td>
+		  <ol>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item
+			  <ol>
+				<li>Indented item</li>
+				<li>Indented item</li>
+			  </ol>
+			</li>
+			<li>Fourth item</li>
+		  </ol>
+		</td>
+	  </tr>
+	</tbody>
+  </table><br>
+
+  <h1>Unordered Lists</h1>
+  <table class="table table-bordered">
+	<thead class="thead-light">
+	  <tr>
+		<th>Markdown</th>
+		<th>HTML</th>
+		<th>Rendered Output</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td>
+		  <code class="highlighter-rouge">
+			- First item<br>
+			- Second item<br>
+			- Third item<br>
+			- Fourth item
+		  </code>
+		</td>
+		<td>
+		  <code class="highlighter-rouge">
+			&lt;ul&gt;<br>
+			  &lt;li&gt;First item&lt;/li&gt;<br>
+			  &lt;li&gt;Second item&lt;/li&gt;<br>
+			  &lt;li&gt;Third item&lt;/li&gt;<br>
+			  &lt;li&gt;Fourth item&lt;/li&gt;<br>
+			&lt;/ul&gt;
+		  </code>
+		</td>
+		<td>
+		  <ul>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+			<li>Fourth item</li>
+		  </ul>
+		</td>
+	  </tr>
+	  <tr>
+		<td>
+		  <code class="highlighter-rouge">
+			* First item<br>
+			* Second item<br>
+			* Third item<br>
+			* Fourth item
+		  </code>
+		</td>
+		<td>
+		  <code class="highlighter-rouge">
+			&lt;ul&gt;<br>
+			  &lt;li&gt;First item&lt;/li&gt;<br>
+			  &lt;li&gt;Second item&lt;/li&gt;<br>
+			  &lt;li&gt;Third item&lt;/li&gt;<br>
+			  &lt;li&gt;Fourth item&lt;/li&gt;<br>
+			&lt;/ul&gt;
+		  </code>
+		</td>
+		<td>
+		  <ul>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+			<li>Fourth item</li>
+		  </ul>
+		</td>
+	  </tr>
+	  <tr>
+		<td>
+		  <code class="highlighter-rouge">
+			+ First item<br>
+			+ Second item<br>
+			+ Third item<br>
+			+ Fourth item
+		  </code>
+		</td>
+		<td>
+		  <code class="highlighter-rouge">
+			&lt;ul&gt;<br>
+			  &lt;li&gt;First item&lt;/li&gt;<br>
+			  &lt;li&gt;Second item&lt;/li&gt;<br>
+			  &lt;li&gt;Third item&lt;/li&gt;<br>
+			  &lt;li&gt;Fourth item&lt;/li&gt;<br>
+			&lt;/ul&gt;
+		  </code>
+		</td>
+		<td>
+		  <ul>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+			<li>Fourth item</li>
+		  </ul>
+		</td>
+	  </tr>
+	  <tr>
+		<td>
+		  <code class="highlighter-rouge">
+			- First item<br>
+			- Second item<br>
+			- Third item<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;- Indented item<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;- Indented item<br>
+			- Fourth item
+		  </code>
+		</td>
+		<td>
+		  <code class="highlighter-rouge">
+			&lt;ul&gt;<br>
+			  &lt;li&gt;First item&lt;/li&gt;<br>
+			  &lt;li&gt;Second item&lt;/li&gt;<br>
+			  &lt;li&gt;Third item<br>
+				&lt;ul&gt;<br>
+				  &lt;li&gt;Indented item&lt;/li&gt;<br>
+				  &lt;li&gt;Indented item&lt;/li&gt;<br>
+				&lt;/ul&gt;<br>
+			  &lt;/li&gt;<br>
+			  &lt;li&gt;Fourth item&lt;/li&gt;<br>
+			&lt;/ul&gt;
+		  </code>
+		</td>
+		<td>
+		  <ul>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item
+			  <ul>
+				<li>Indented item</li>
+				<li>Indented item</li>
+			  </ul>
+			</li>
+			<li>Fourth item</li>
+		  </ul>
+		</td>
+	  </tr>
+	</tbody>
+  </table><br>
+
+  <h1>Escaping Backticks</h1>
+  <table class="table table-bordered">
+	<thead class="thead-light">
+	  <tr>
+		<th>Markdown</th>
+		<th>HTML</th>
+		<th>Rendered Output</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td><code>``Use `code` in your Markdown file.``</code></td>
+		<td><code class="highlighter-rouge">&lt;code&gt;Use `code` in your Markdown file.&lt;/code&gt;</code></td>
+		<td><code>Use `code` in your Markdown file.</code></td>
+	  </tr>
+	</tbody>
+  </table>
+
+  <h1>Blockquotes</h1>
+  <h3>Markdown</h3>
+  <div class="highlight"><pre class="highlight"><code>&gt; Dorothy followed her through many of the beautiful rooms in her castle.
+</code></pre></div><br>
+  <h3>Rendered Output</h3>
+  <blockquote>
+	<p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+  </blockquote>
+
+  <h1>Nested Blockquotes</h1>
+  <h3>Markdown</h3>
+  <div class="highlight"><pre class="highlight"><code>&gt; Dorothy followed her through many of the beautiful rooms in her castle.
+	&gt;
+	&gt;&gt; The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+	</code></pre></div><br>
+	<h3>Rendered Output</h3>
+  <blockquote>
+	<p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+
+	<blockquote>
+	  <p>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.</p>
+	</blockquote>
+  </blockquote>
+
+  <h1>Blockquotes with other Elements</h1>
+  <h3>Markdown</h3>
+  <div class="highlight"><pre class="highlight"><code>&gt; #### The quarterly results look great!
+	&gt;
+	&gt; - Revenue was off the chart.
+	&gt; - Profits were higher than ever.
+	&gt;
+	&gt;  *Everything* is going according to **plan**.
+	</code></pre></div><br>
+	<h3>Rendered Output</h3>
+  <blockquote>
+	<h4 class="no-anchor" id="the-quarterly-results-look-great">The quarterly results look great!</h4>
+
+	<ul>
+	  <li>Revenue was off the chart.</li>
+	  <li>Profits were higher than ever.</li>
+	</ul>
+
+	<p><em>Everything</em> is going according to <strong>plan</strong>.</p>
+  </blockquote><br>
+
+  <h1>Code</h1>
+  <table class="table table-bordered">
+	<thead class="thead-light">
+	  <tr>
+		<th>Markdown</th>
+		<th>HTML</th>
+		<th>Rendered Output</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td><code class="highlighter-rouge">At the command prompt, type `nano`.</code></td>
+		<td><code class="highlighter-rouge">At the command prompt, type &lt;code&gt;nano&lt;/code&gt;. </code></td>
+		<td>At the command prompt, type <code class="highlighter-rouge">nano</code>.</td>
+	  </tr>
+	</tbody>
+  </table><br>
+
+  <h1>Escaping Backticks</h1>
+  <table class="table table-bordered">
+	<thead class="thead-light">
+	  <tr>
+		<th>Markdown</th>
+		<th>HTML</th>
+		<th>Rendered Output</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td><code>``Use `code` in your Markdown file.``</code></td>
+		<td><code class="highlighter-rouge">&lt;code&gt;Use `code` in your Markdown file.&lt;/code&gt;</code></td>
+		<td><code>Use `code` in your Markdown file.</code></td>
+	  </tr>
+	</tbody>
+  </table><br>
+
+  <h1>Link</h1>
+  <h3>Markdown</h3>
+  <div class="highlight"><pre class="highlight"><code>My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+</code></pre></div><br>
+  <h3>Rendered Output</h3>
+  <p>My favorite search engine is <a href="https://duckduckgo.com">Duck Duck Go</a>.</p>
+
+  <h1>Urls and Email Address</h1>
+  <h3>Markdown</h3>
+  <div class="highlight"><pre class="highlight"><code>&lt;https://www.markdownguide.org&gt;
+	&lt;fake@example.com&gt;
+	</code></pre></div><br>
+  <h3>Rendered Output</h3>
+  <p><a href="https://www.markdownguide.org">https://www.markdownguide.org</a><br>
+	<a href="mailto:fake@example.com">fake@example.com</a></p>
+
+  <h1>Image</h1>
+  <h3>Markdown</h3>
+  <div class="highlight"><pre class="highlight"><code>![The San Juan Mountains are beautiful!](/assets/images/san-juan-mountains.jpg "San Juan Mountains")
+</code></pre></div><br>
+  <h3>Rendered Output</h3>
+  <p><img srcset="https://mdg.imgix.net/assets/images/san-juan-mountains.jpg?auto=format&amp;fit=clip&amp;w=480 480w,              https://mdg.imgix.net/assets/images/san-juan-mountains.jpg?auto=format&amp;fit=clip&amp;q=40&amp;w=1080 1080w" src="https://mdg.imgix.net/assets/images/san-juan-mountains.jpg" class="img-fluid" title="San Juan Mountains" alt="The San Juan Mountains are beautiful!" loading="lazy" sizes="100vw"></p>
+
+  <h1>Linking Image</h1>
+  <h3>Markdown</h3>
+  <div class="highlight"><pre class="highlight"><code>[![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
+</code></pre></div><br>
+  <h3>Rendered Output</h3>
+  <img srcset="https://mdg.imgix.net/assets/images/shiprock.jpg?auto=format&amp;fit=clip&amp;w=480 480w,
+             https://mdg.imgix.net/assets/images/shiprock.jpg?auto=format&amp;fit=clip&amp;q=40&amp;w=1080 1080w" src="https://mdg.imgix.net/assets/images/shiprock.jpg" class="img-fluid" title="Shiprock, New Mexico by Beau Rogers" alt="An old rock in the desert" loading="lazy" sizes="100vw">
+  <br>
+
+  <h1>Escaping Characters</h1>
+  <h3>Markdown</h3>
+  <div class="highlight"><pre class="highlight"><code>\* Without the backslash, this would be a bullet in an unordered list.
+  </code></pre></div><br>
+  <h3>Rendered Output</h3>
+  <p>* Without the backslash, this would be a bullet in an unordered list.</p>
+
+  <h1>Characters You Can Escape</h1>
+  <table class="table table-bordered">
+	<thead class="thead-light">
+	  <tr>
+		<th>Character</th>
+		<th>Name</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td>\</td>
+		<td>backslash</td>
+	  </tr>
+	  <tr>
+		<td>`</td>
+		<td>backtick</td>
+	  </tr>
+	  <tr>
+		<td>*</td>
+		<td>asterisk</td>
+	  </tr>
+	  <tr>
+		<td>_</td>
+		<td>underscore</td>
+	  </tr>
+	  <tr>
+		<td>{ }</td>
+		<td>curly braces</td>
+	  </tr>
+	  <tr>
+		<td>[ ]</td>
+		<td>brackets</td>
+	  </tr>
+	  <tr>
+		<td>&lt; &gt;</td>
+		<td>angle brackets</td>
+	  </tr>
+	  <tr>
+		<td>( )</td>
+		<td>parentheses</td>
+	  </tr>
+	  <tr>
+		<td>#</td>
+		<td>pound sign</td>
+	  </tr>
+	  <tr>
+		<td>+</td>
+		<td>plus sign</td>
+	  </tr>
+	  <tr>
+		<td>-</td>
+		<td>minus sign (hyphen)</td>
+	  </tr>
+	  <tr>
+		<td>.</td>
+		<td>dot</td>
+	  </tr>
+	  <tr>
+		<td>!</td>
+		<td>exclamation mark</td>
+	  </tr>
+	  <tr>
+		<td>|</td>
+		<td>pipe</td>
+	  </tr>
+	</tbody>
+  </table><br>
+</body>

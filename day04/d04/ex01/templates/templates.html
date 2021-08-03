@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+	<title>Ex01: Template engine.</title>
+{% endblock title %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'style2.css' %}">
+{% endblock style %}
+{% block content %}
+<h1>Django template engine</h1>
+<ul style="background-color: white;">
+	<li style="float: none; font-size: xx-large;">Blocks</li>
+	<ol>
+		<li style="float: none;">Make block in base template like this: &#123;% content block %&#125;</li>
+		<li style="float: none;">Put base content on it.</li>
+		<li style="float: none;">Close block like this: &#123;% endblock content %&#125;</li>
+		<li style="float: none;">Extends base template like this: &#123;% extends 'base.html' %&#125;</li>
+	</ol>
+	<li style="float: none; font-size: xx-large;">for ... in loop</li>
+	<ol>
+		<li style="float: none;">for loop like this:</li>
+		<li style="float: none;">&#60;ul&#62;</li>
+		<li style="float: none;">&#123;%&#32;for component on list&#32;%&#125;</li>
+		<li style="float: none;">&#60;li&#62;&#123;&#123; component &#125;&#125;&#60;li&#62;</li>
+		<li style="float: none;">&#123;%&#32;endfor&#32;%&#125;</li>
+		<li style="float: none;">&#60;/ul&#62;<br></li>
+		</li>
+	</ol>
+	<li style="float: none; font-size: xx-large;">Variables through view.py</li>
+	<ol>
+		<li style="float: none;">Make class in models.py</li>
+		<li style="float: none;">In this class, make class variables</li>
+		<li style="float: none;">Connect this models to views.py</li>
+		<li style="float: none;">Can use this variables in template like this
+		: &#123;&#123; Class.member &#125;&#125;
+	</ol>
+</ul>
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}
+	<title>Ex01: Display process of a static page.</title>
+{% endblock title %}
+{% block content %}
+<h1>Display process of a static page</h1><br>
+<div>
+A static website comprises a set of related HTML pages and files hosted on a computer running a web server.<br>
+A web server is software that serves web pages in response to requests from web browsers.<br>
+A page request is generated when a visitor clicks a link on a web page,<br>
+selects a bookmark in a browser, or enters a URL in a browser's address text box.<br>
+The final content of a static web page is determined by the page designer and doesn't change when the page is requested.<br>
+</div>
+<h1>Flow of request and response</h1>
+<div>
+	<ol>
+		<li>Web browser requests static page.</li><br>
+		<li>Web server finds page.</li><br>
+		<li>Web server sends page to requesting browser.</li>
+	</ol>
+</div>
+{% endblock content %}
