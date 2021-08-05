@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Results</title>
+		<style>
+			table{
+				margin:auto;
+				border: solid 3px;
+				border-collapse: collapse;
+				text-align: center;
+			}
+			tr, th, td{
+				border: solid 1px;
+				text-align: center;
+			}
+		</style>
+	</head>
+		<body>
+			<h1 style="text-align: center;">Results</h1>
+			<table>
+			<tr>
+			<th>name</th>
+			<th>homeworld</th>
+			<th>climate</th>
+			</tr>
+			{% for result in results %}
+			<tr>
+			<td>{{ result.0 }}</td>
+			<td>{{ result.1 }}</td>
+			<td>{{ result.2 }}</td>
+			</tr>
+			{% endfor %}
+			</table>
+		</body>
+</html>

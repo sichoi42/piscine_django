@@ -89,8 +89,6 @@ def update(request: HttpRequest):
 			new = Movies.objects.get(title=data.cleaned_data['title'])
 			new.opening_crawl = data.cleaned_data['opening_crawl']
 			new.save()
-			#Movies.objects.filter(title=data.cleaned_data['title']).update(
-			#opening_crawl=data.cleaned_data['opening_crawl'])
 			return redirect('/ex07/update')
 		return render(request, 'update2.html', {'data': Update(choices)})
 	except:
