@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>remove</title>
+	</head>
+	<body>
+		<h1>Choose title you want to remove</h1>
+		<form method="post" action="">
+			{% csrf_token %}
+			{{ data.as_table }}
+			<input type="submit" value="Remove">
+		</form>
+	</body>
+</html>

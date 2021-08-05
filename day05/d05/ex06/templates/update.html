@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>update</title>
+	</head>
+	<body>
+		<h1>Input text you want to change opening_crawls</h1>
+		<form method="post" action="">
+			{% csrf_token %}
+			{{ data.as_table }}
+			<input type="submit" value="update">
+		</form>
+	</body>
+</html>
